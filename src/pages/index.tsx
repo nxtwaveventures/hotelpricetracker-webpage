@@ -77,7 +77,7 @@ export default function Home() {
                                 <a href="#features" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Features</a>
                                 <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">How it Works</a>
                                 <a href="#testimonials" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
-                                <a href="https://t.me/hoteldropbot" className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-opacity">
+                                <a href="https://t.me/hoteldropbot" className="bg-gradient-to-r from-orange-500 to-gray-900 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-opacity">
                                     Get Started
                                 </a>
                             </div>
@@ -111,7 +111,7 @@ export default function Home() {
                         >
                             <a
                                 href="https://t.me/hoteldropbot"
-                                className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:opacity-90 transition-opacity"
+                                className="inline-block bg-gradient-to-r from-orange-500 to-gray-900 text-white px-8 py-4 rounded-full text-lg font-medium hover:opacity-90 transition-opacity"
                             >
                                 Start Saving Now
                             </a>
