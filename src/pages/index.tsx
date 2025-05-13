@@ -130,8 +130,8 @@ export default function Home() {
                             viewport={{ once: true }}
                             className="text-center"
                         >
-                            <h3 className="text-4xl font-bold text-gray-900">500K+</h3>
-                            <p className="text-gray-600">Active Users</p>
+                            <h3 className="text-4xl font-bold text-gray-900">Thousands</h3>
+                            <p className="text-gray-600">of Happy Users</p>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -139,8 +139,8 @@ export default function Home() {
                             viewport={{ once: true }}
                             className="text-center"
                         >
-                            <h3 className="text-4xl font-bold text-gray-900">$2.5M+</h3>
-                            <p className="text-gray-600">Saved by Users</p>
+                            <h3 className="text-4xl font-bold text-gray-900">Millions</h3>
+                            <p className="text-gray-600">in Potential Savings</p>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -148,10 +148,18 @@ export default function Home() {
                             viewport={{ once: true }}
                             className="text-center"
                         >
-                            <h3 className="text-4xl font-bold text-gray-900">70%</h3>
-                            <p className="text-gray-600">Average Savings</p>
+                            <h3 className="text-4xl font-bold text-gray-900">Up to 70%</h3>
+                            <p className="text-gray-600">Possible Savings*</p>
                         </motion.div>
                     </div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        className="text-center mt-8 text-sm text-gray-500"
+                    >
+                        <p>*Actual savings may vary based on seasonality, availability, and market conditions.</p>
+                    </motion.div>
                 </div>
             </section>
 
