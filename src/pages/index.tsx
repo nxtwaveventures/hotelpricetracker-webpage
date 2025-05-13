@@ -176,20 +176,13 @@ export default function Home() {
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose HotelDropBot?</h2>
                         <p className="text-xl text-gray-600">Powerful features to help you save on every booking</p>
                     </motion.div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <motion.div
                             whileHover={{ y: -10 }}
                             className="bg-white p-6 rounded-xl shadow-lg"
                         >
                             <h3 className="text-xl font-semibold mb-4">Real-time Price Alerts</h3>
                             <p className="text-gray-600">Get instant notifications when hotel prices drop for your desired dates.</p>
-                        </motion.div>
-                        <motion.div
-                            whileHover={{ y: -10 }}
-                            className="bg-white p-6 rounded-xl shadow-lg"
-                        >
-                            <h3 className="text-xl font-semibold mb-4">Price History</h3>
-                            <p className="text-gray-600">View historical price trends to make informed booking decisions.</p>
                         </motion.div>
                         <motion.div
                             whileHover={{ y: -10 }}
