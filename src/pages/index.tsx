@@ -77,8 +77,8 @@ export default function Home() {
                                 <a href="#features" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Features</a>
                                 <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">How it Works</a>
                                 <a href="#testimonials" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
-                                <a href="https://t.me/hoteldropbot" className="bg-gradient-to-r from-orange-500 to-gray-900 text-white px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-opacity">
-                                    Get Started
+                                <a href="https://t.me/hoteldropbot" className="bg-gradient-to-r from-orange-500 via-orange-400 to-green-500 text-white px-6 py-3 rounded-full text-sm font-medium hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                    Try Hotel Drop Bot
                                 </a>
                             </div>
                         </div>
@@ -111,9 +111,10 @@ export default function Home() {
                         >
                             <a
                                 href="https://t.me/hoteldropbot"
-                                className="inline-block bg-gradient-to-r from-orange-500 to-gray-900 text-white px-8 py-4 rounded-full text-lg font-medium hover:opacity-90 transition-opacity"
+                                className="inline-block bg-gradient-to-r from-orange-500 via-orange-400 to-green-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl relative overflow-hidden group"
                             >
-                                Start Saving Now
+                                <span className="relative z-10">Start Saving Now</span>
+                                <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-orange-400 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </a>
                         </motion.div>
                     </motion.div>
@@ -293,9 +294,10 @@ export default function Home() {
                         </h2>
                         <a
                             href="https://t.me/hoteldropbot"
-                            className="inline-block bg-white text-purple-600 px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-100 transition-colors"
+                            className="inline-block bg-gradient-to-r from-orange-500 via-orange-400 to-green-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl relative overflow-hidden group"
                         >
-                            Try HotelDropBot Now
+                            <span className="relative z-10">Try HotelDropBot Now</span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-orange-400 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </a>
                     </motion.div>
                 </div>
