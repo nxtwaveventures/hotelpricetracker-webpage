@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
+import MarketingAgent from '../components/MarketingAgent';
 
 export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -273,6 +274,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            {/* Marketing Agent Section */}
+            <MarketingAgent />
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-purple-600 to-blue-600">
