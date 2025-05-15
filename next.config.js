@@ -3,7 +3,6 @@ const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
     images: {
-        domains: ['images.unsplash.com'], // Add any image domains you'll use
         remotePatterns: [
             {
                 protocol: 'https',
@@ -12,6 +11,7 @@ const nextConfig = {
             },
         ],
     },
+    output: 'export',
     // Removed problematic experimental features
     experimental: {
         scrollRestoration: true,
