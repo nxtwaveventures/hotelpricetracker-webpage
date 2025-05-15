@@ -1,7 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 export default function TermsOfService() {
+    useEffect(() => {
+        console.log('Terms of Service page mounted');
+    }, []);
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-green-50">
             <Head>
