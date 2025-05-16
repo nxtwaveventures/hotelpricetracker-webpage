@@ -158,53 +158,73 @@ export default function Home() {
                 </div>
             </nav>
 
-            {/* Hero Section with Meme Energy */}
-            <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+            {/* Hero Section */}
+            <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="text-center"
-                    >
-                        <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-8">
-                            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                                Hotel Prices Too High?
-                            </span>
-                            <br />
-                            <motion.span
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.8 }}
+                            className="text-center lg:text-left"
+                        >
+                            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                                Stop overpaying for hotels.
+                                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-orange-400 to-green-500">
+                                    Let the bot handle it! 🤖
+                                </span>
+                            </h1>
+                            <p className="text-xl text-gray-600 mb-8">
+                                Our AI-powered bot hunts for hotel price drops 24/7, so you can book at the perfect moment.
+                                Save up to 70% on your next stay!
+                            </p>
+                            <motion.div
+                                className="space-y-4 sm:space-y-0 sm:space-x-4"
+                                whileHover={{ scale: 1.02 }}
+                            >
+                                <a
+                                    href="https://t.me/hoteldropbot"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block bg-gradient-to-r from-orange-500 via-orange-400 to-green-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:shadow-xl relative overflow-hidden group"
+                                >
+                                    <span className="relative z-10">Start Saving Now! 🚀</span>
+                                    <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-orange-400 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                </a>
+                            </motion.div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            className="relative"
+                        >
+                            <div className="relative w-full h-[400px]">
+                                <Image
+                                    src="/landing-meme.svg"
+                                    alt="Hotel price comparison meme"
+                                    fill
+                                    style={{ objectFit: 'contain' }}
+                                    priority={true}
+                                />
+                            </div>
+                            <motion.div
+                                className="absolute -bottom-4 right-4 transform rotate-12 bg-white px-4 py-2 rounded-lg shadow-lg"
                                 animate={{
-                                    scale: [1, 1.2, 1],
-                                    rotate: [0, -5, 5, -5, 0]
+                                    rotate: [12, 8, 12],
+                                    y: [0, -5, 0]
                                 }}
                                 transition={{
-                                    duration: 2,
+                                    duration: 4,
                                     repeat: Infinity,
-                                    repeatDelay: 3
+                                    ease: "easeInOut"
                                 }}
                             >
-                                Hold My Bot! 🤖
-                            </motion.span>
-                        </h1>
-                        <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-                            Let our AI-powered bot do the price stalking while you plan the fun stuff!
-                            Save up to 70% on hotels with zero effort.
-                            <span className="block mt-2 text-sm">(Because manually checking prices is so 2023 😉)</span>
-                        </p>
-                        <motion.div
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        >
-                            <a
-                                href="https://t.me/hoteldropbot"
-                                className="inline-block bg-gradient-to-r from-orange-500 via-orange-400 to-green-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:shadow-xl relative overflow-hidden group"
-                            >
-                                <span className="relative z-10">Start Saving Now! 🚀</span>
-                                <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-orange-400 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                            </a>
+                                <span className="text-sm font-medium text-gray-600">Real footage of savings 📸</span>
+                            </motion.div>
                         </motion.div>
-                    </motion.div>
+                    </div>
                 </div>
             </section>
 
