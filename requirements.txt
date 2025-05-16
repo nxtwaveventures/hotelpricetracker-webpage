@@ -1,0 +1,7 @@
+moviepy==1.0.3
+Pillow==10.2.0
+gTTS==2.5.1
+google-api-python-client==2.118.0
+google-auth-oauthlib==1.2.0
+requests==2.31.0
+python-dotenv==1.0.1 

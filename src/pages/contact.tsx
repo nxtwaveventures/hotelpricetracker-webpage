@@ -148,10 +148,11 @@ export default function Contact() {
                         >
                             <div className="relative h-48 w-full mb-4">
                                 <Image
-                                    src="/contact-meme.png"
+                                    src="/contact-meme.svg"
                                     alt="Fun contact meme"
                                     fill
                                     style={{ objectFit: 'contain' }}
+                                    priority
                                 />
                             </div>
                             <motion.p

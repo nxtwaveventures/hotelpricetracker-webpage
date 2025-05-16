@@ -7,11 +7,17 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'images.unsplash.com',
-                pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'graph.facebook.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'scontent.xx.fbcdn.net',
+            }
         ],
     },
-    output: 'export',
     // Removed problematic experimental features
     experimental: {
         scrollRestoration: true,
