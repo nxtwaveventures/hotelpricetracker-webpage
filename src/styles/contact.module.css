@@ -1,0 +1,62 @@
+/* Contact Page Specific Styles */
+.formInput {
+    transition: all 0.3s ease;
+}
+
+.formInput:focus {
+    transform: scale(1.01);
+}
+
+.memeContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.memeContainer:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 165, 0, 0.1), rgba(138, 43, 226, 0.1));
+    animation: gradientShift 2s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.botStat {
+    transition: transform 0.2s ease;
+}
+
+.botStat:hover {
+    transform: translateY(-2px);
+}
+
+.successEmoji {
+    animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
